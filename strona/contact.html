@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt - Filip Stawicki</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="description" content="Kontakt z autorem strony">
+    <meta name="author" content="Filip Stawicki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style/style-contact.css">
+
+</head>
+
+<body>
+    <nav>
+
+        <ul>
+            <li> Filip Stawicki</li>
+            <li class="animation"> <a href="register.html">Rejestracja</a></li>
+            <li class="animation"> <a href="login.html">Logowanie</a></li>
+            <li class="animation"> <a href="main.html">Artykuły</a></li>
+            <li class="animation"> <a href="galery.html">Galeria</a></li>
+            <li class="animation"> <a href="about.html">O Autorze</a></li>
+            <li class="animation"> <a href="contact.html">Kontakt</a></li>
+
+        </ul>
+
+    </nav>
+    <header>
+        <h1>Kontakt</h1>
+    </header>
+    <main>
+
+        <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+            <div class="form-row">
+                <label for="field-name">Name*</label>
+                <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+            </div>
+            <div class="form-row">
+                <label for="field-email">Email*</label>
+                <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+            <div class="form-row">
+                <label for="field-message">Message*</label>
+                <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+            </div>
+            <div class="form-row">
+                <label class="checkbox-cnt">
+                    <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                    <i class="state" aria-hidden="true"></i>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet mattis sit amet, ultrices in erat. Aenean suscipit arcu ac lorem lacinia ut scelerisque turpis commodo.</span>
+                </label>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="submit-btn">
+                    Wyślij
+                </button>
+            </div>
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="info">
+            <h3>Filip Stawicki 194493</h3>
+            <p>09.05.2019 </p>
+        </div>
+    </footer>
+</body>
+
+</html>

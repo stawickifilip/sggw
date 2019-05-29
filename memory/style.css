@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 20px;
+	font-family: 'arial';
+	font-weight: bold;
+	color: white;
+	
+	background-color: #adddcf;
+}
+
+#score{
+	height: 20vh;
+	width: 100%;
+	font-size: 46px;
+	
+	line-height: 200px;
+	text-align: center;
+	background-color: #fed1be;
+	border-bottom: 2px solid white;
+
+}
+
+main{
+	min-height: 80vh;
+	padding: 100px 0;
+	position: relative;
+	text-align: center;
+}
+
+#game_table {
+	border-collapse: collapse;
+
+   margin: 200px auto 0 auto;
+   position: absolute;
+   top:0; bottom:0; /* wyrównanie w pionie */
+   left:0; right:0; /* wyrównanie w poziomie */
+   max-width: 100%;
+   max-height: 100%;
+   overflow: auto;
+}
+
+td{
+	
+	border: 2px solid white;
+	
+	
+	
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.selected {
+	opacity: 0.5;
+}
+
+.scored {
+	opacity: 1.0;
+}
+
+/* ------------------------------- */
+

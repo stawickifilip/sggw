@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    margin-bottom: 100px;
+}
+
+html {
+    font-family: helvetica, arial, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.92);
+    z-index: 999;
+}
+
+li {
+    float: left;
+}
+
+li:first-child {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 20px 0 50px;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+li a {
+    display: inline-block;
+    color: #8d8e8e;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: black;
+}
+
+.animation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.animation:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+.active {
+    background-color: red;
+}
+
+header {
+
+    position: relative;
+    background-image: url(../photos/rzeszow3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 400px;
+    margin: 52px 0 100px 0;
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 400;
+    position: absolute;
+    top: 150px;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    color: white;
+}
+
+main {
+    min-height: 800px;
+    background-color: #dee9f1;
+}
+
+main div {
+    float: left;
+    max-width: 50%;
+    height: 400px;
+    overflow: hidden;
+}
+
+main div img {
+    width: 50vw;
+    background-position: center
+}
+
+main div p {
+    font-size: 18px;
+    text-align: center;
+    margin: 140px 20px 140px 20px;
+}
+
+main div span {
+    color: #047edd;
+}
+
+footer {
+    position: relative;
+    margin-top: 95px;
+    text-align: center;
+    height: 100px;
+    background-color: #13181b;
+}
+
+footer div {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+
+    color: #98d2ff;
+}
+
+footer h3 {
+    margin-bottom: 5px;
+
+    color: #8d8e8e;
+    letter-spacing: 0.5px;
+}

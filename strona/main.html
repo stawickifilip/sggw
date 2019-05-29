@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Artykuły - Filip Stawicki</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="description" content="Artykuły">
+    <meta name="author" content="Filip Stawicki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style/style-main.css">
+
+</head>
+
+<body>
+    <nav>
+
+        <ul>
+            <li> Filip Stawicki</li>
+            <li class="animation"> <a href="register.html">Rejestracja</a></li>
+            <li class="animation"> <a href="login.html">Logowanie</a></li>
+            <li class="animation"> <a href="main.html">Artykuły</a></li>
+            <li class="animation"> <a href="galery.html">Galeria</a></li>
+            <li class="animation"> <a href="about.html">O Autorze</a></li>
+            <li class="animation"> <a href="contact.html">Kontakt</a></li>
+        </ul>
+
+    </nav>
+    <header>
+        <h1>Artykuły</h1>
+    </header>
+    <main>
+        <article>
+            <section class="articles">
+                <div class="image"> </div>
+                <!-- autor artykulu - fota data wstawienia -->
+
+                <h2>Artykuł o lodowej pustyni</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, sem faucibus ornare scelerisque, elit elit scelerisque leo, quis egestas purus turpis et leo. Sed aliquet orci vel gravida vestibulum. Pellentesque eu dictum felis. Nunc eu dapibus mauris. Aliquam aliquam, dui lacinia sagittis fringilla, neque erat fringills. Nunc eu dapibus mauris. Aliquam aliquam, dui lacinia sagittis fringilla, neque erat fringilla orci, eu luctus <a href="">Czytaj dalej...</a></p>
+                <div class="comm">
+                    <div class="profileimg">
+                        <img src="photos/profilowe.jpg" alt="">
+                    </div>
+                    <div class="commenttext clearfix middle">
+                        <p><span>Autor: Filip | 10.05.2019 9:00</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="comments clearfix">
+                <div class="comm">
+                    <div class="profileimg">
+                        <img src="photos/profilowe3.jpg" alt="zdj artykulu">
+                    </div>
+                    <div class="commenttext clearfix">
+                        <p><span>Michał95 10.05.2019 15:32</span></p>
+                        <p> PRZYKŁADOWY KOMENTARZ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, sem faucibus ornare scelerisque, elit elit scelerisque leo, quis egestas purus turpis et leo. Sed aliquet orci vel gravida vestibulum. Pellentesque eu dictum felis. Nunc eu dapibus mauris. Aliquam aliquam, dui lacinia sagittis fringilla, neque erat fringilla orci, eu luctus. </p>
+                    </div>
+                </div>
+                <div class="comm">
+                    <div class="profileimg">
+                        <img src="photos/profilowe2.jpg" alt="zdj artykulu">
+                    </div>
+                    <div class="commenttext clearfix">
+                        <p><span>Agnieszka 10.05.2019 12:41</span></p>
+                        <p>PRZYKŁADOWY KOMENTARZ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, sem faucibus ornare scelerisque, elit elit scelerisque leo, quis egestas purus turpis et leo. Sed aliquet orci vel gravida vestibulum. Pellentesque eu dictum felis. Nunc eu dapibus mauris. Aliquam aliquam, dui lacinia sagittis fringilla, neque erat fringilla orci, eu luctus. </p>
+                    </div>
+                </div>
+
+                <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+                    <div class="form-row">
+                        <label for="field-name">Login*</label>
+                        <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                    </div>
+                    <div class="form-row">
+                        <label for="field-message">Comment*</label>
+                        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="submit-btn">
+                            Dodaj komentarz
+                        </button>
+                    </div>
+                </form>
+                </form>
+            </section>
+        </article>
+
+        <article>
+            <section class="articles">
+                <div class="image2"> </div>
+                <!-- autor artykulu - fota data wstawienia -->
+
+                <h2>Artykuł o zwykłej pustyni</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, sem faucibus ornare scelerisque, elit elit scelerisque leo, quis egestas purus turpis et leo. Sed aliquet orci vel gravida vestibulum. Pellentesque eu dictum felis. Nunc eu dapibus mauris. Aliquam aliquam, dui lacinia sagittis fringilla, neque erat fringills. Nunc eu dapibus mauris. Aliquam aliquam, dui lacinia sagittis fringilla, neque erat fringilla orci, eu luctus <a href="">Czytaj dalej...</a></p>
+                <div class="comm">
+                    <div class="profileimg">
+                        <img src="photos/profilowe.jpg" alt="">
+                    </div>
+                    <div class="commenttext clearfix middle">
+                        <p><span>Autor: Filip | 10.05.2019 9:00</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="comments clearfix">
+                <div class="comm">
+                    <div class="profileimg">
+                        <img src="photos/profilowe3.jpg" alt="zdj artykulu">
+                    </div>
+                    <div class="commenttext clearfix">
+                        <p><span>Michał95 10.05.2019 15:32</span></p>
+                        <p> PRZYKŁADOWY KOMENTARZ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, sem faucibus ornare scelerisque, elit elit scelerisque leo, quis egestas purus turpis et leo. Sed aliquet orci vel gravida vestibulum. Pellentesque eu dictum felis. Nunc eu dapibus mauris. Aliquam aliquam, dui lacinia sagittis fringilla, neque erat fringilla orci, eu luctus. </p>
+                    </div>
+                </div>
+                <div class="comm">
+                    <div class="profileimg">
+                        <img src="photos/profilowe2.jpg" alt="zdj artykulu">
+                    </div>
+                    <div class="commenttext clearfix">
+                        <p><span>Agnieszka 10.05.2019 12:41</span></p>
+                        <p>PRZYKŁADOWY KOMENTARZ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat, sem faucibus ornare scelerisque, elit elit scelerisque leo, quis egestas purus turpis et leo. Sed aliquet orci vel gravida vestibulum. Pellentesque eu dictum felis. Nunc eu dapibus mauris. Aliquam aliquam, dui lacinia sagittis fringilla, neque erat fringilla orci, eu luctus. </p>
+                    </div>
+                </div>
+
+                <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+                    <div class="form-row">
+                        <label for="field-name">Login*</label>
+                        <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                    </div>
+                    <div class="form-row">
+                        <label for="field-message">Comment*</label>
+                        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="submit-btn">
+                            Dodaj komentarz
+                        </button>
+                    </div>
+                </form>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+
+        <div class="info">
+            <h3>Filip Stawicki 194493</h3>
+            <p>09.05.2019 </p>
+        </div>
+    </footer>
+</body>
+
+</html>

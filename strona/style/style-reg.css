@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+}
+
+body {
+    background-color: #f0f2f3;
+}
+
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+	
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+li {
+    float: left;
+}
+
+li:first-child{
+  display: inline-block;
+  padding: 14px 16px;
+  margin: 0 20px 0 50px;
+  
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+li a {
+  display: inline-block;
+  padding: 16px 16px;
+  
+  color: #8d8e8e;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover{
+	color: black;
+}
+
+.animation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.animation:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+div.register {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+	right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+	
+    text-align: center;
+    border: black 2px solid;
+}
+
+div.register form {
+    margin-top: 40px;
+}
+
+div.register p {
+    margin: 5px 0 5px 0;
+}
+
+div.register input {
+    background-color: #dee9f1;
+}
+
+div.register button {
+    padding: 10px 30px 10px 30px;
+	
+	
+    font-size: 17px;
+    background-color: transparent;
+}
+
+div.register button:hover {
+    padding: 10px 30px 10px 30px;
+	
+	cursor: pointer;
+   
+    background-color: #98d2ff;
+    transition: 0.5s;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	height: 100px;
+	background-color: #13181b;
+	
+}
+footer div{
+	position: absolute;
+	width: 100%;
+	top: 25%;
+	
+	text-align: center;
+	color: #98d2ff;
+}
+footer h3{
+	color: #8d8e8e;;
+	letter-spacing: 0.5px;
+	margin-bottom:5px;
+}
